@@ -27,7 +27,7 @@ class HexGrid extends React.Component {
         // alert("calling update pixicnt");
         // call get API
         try {
-            var result = await axios.get(`http://covid-cluster-backend.herokuapp.com/covidCluster/getAllClusters`);
+            var result = await axios.get(`https://covid-cluster-backend.herokuapp.com/covidCluster/getAllClusters`);
         } catch (error) {
             console.log(error);
             alert("Error trying to get clusters from backend");

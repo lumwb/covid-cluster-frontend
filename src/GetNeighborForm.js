@@ -8,7 +8,7 @@ class GetNeighborForm extends React.Component {
 
     handleSubmit = async (event) => {
         event.preventDefault();
-        await axios.get(`http://covid-cluster-backend.herokuapp.com/covidCluster/neighbors?clusterName=` + this.state.clusterName)
+        await axios.get(`https://covid-cluster-backend.herokuapp.com/covidCluster/neighbors?clusterName=` + this.state.clusterName)
             .then((response) => {
                 alert(prettifyNeigbors(response.data.neighbors));
             }).catch((error) => {
