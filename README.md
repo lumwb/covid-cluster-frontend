@@ -4,7 +4,9 @@ A (amatuer) attempt at creating a React web front-end for visualising clusters.
 
 Allows for 3 simple operations to add cluster, delete cluster and get neighbour.
 
-Pardon the un-appealing UI and full page refresh on form-submit...
+Pardon the un-appealing UI and need for full page refresh on form-submit...
+
+Unable to rerender hexgrid map (uses React ref) only on parent props change. Thus the need to refresh the entire page.
 
 ### Local Testing
 
@@ -20,7 +22,7 @@ Run react-server. localhost:3000
 
 
 ### To Improve:
-- State / Prop passing amongst component
+- Proper state / prop passing amongst component
 - UI of input fields and buttons
 - Dynamically determine size of hexagons based on number of hexagons
 - Highlight border of clusters when calling get cluster neighbors
