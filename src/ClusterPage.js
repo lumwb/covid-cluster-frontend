@@ -5,9 +5,6 @@ import GetNeighborForm from './GetNeighborForm';
 import HexGrid from './HexGrid';
 
 class ClusterPage extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
