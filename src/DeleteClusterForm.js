@@ -11,7 +11,7 @@ class DeleteClusterForm extends React.Component {
         axios.delete(`https://covid-cluster-backend.herokuapp.com/covidCluster/`,
             { data: { clusterName: this.state.clusterName } })
             .then((response) => {
-                // alert(response);
+                alert("Please refresh page to see map :)");
             }).catch((error) => {
                 alert("Unable to delete this cluster.");
             });

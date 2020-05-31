@@ -9,12 +9,13 @@ class AddClusterForm extends React.Component {
     };
 
     handleSubmit = async (event) => {
+        event.preventDefault();
         await axios.post(`https://covid-cluster-backend.herokuapp.com/covidCluster/`, {
             "baseClusterName": this.state.baseClusterName,
             "baseClusterSide": this.state.baseClusterSide,
             "newClusterName": this.state.newClusterName,
         }).then((response) => {
-            alert(response);
+            alert("Please refresh page to see map :)");
         }).catch((error) => {
             alert("Unable to add specified cluster.\n -  Name must be unique. \n - Side must not be occupied");
         });
