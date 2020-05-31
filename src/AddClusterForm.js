@@ -9,7 +9,7 @@ class AddClusterForm extends React.Component {
     };
 
     handleSubmit = async (event) => {
-        // event.preventDefault();
+        event.preventDefault();
         try {
             await axios.post(`https://covid-cluster-backend.herokuapp.com/covidCluster/`, {
                 "baseClusterName": this.state.baseClusterName,
@@ -19,7 +19,7 @@ class AddClusterForm extends React.Component {
         } catch (error) {
             console.log(error);
         }
-        // alert("Please refresh page to see map :)");
+        alert("Please refresh page to see map :)");
         // axios.post(`https://covid-cluster-backend.herokuapp.com/covidCluster/`, {
         //     "baseClusterName": this.state.baseClusterName,
         //     "baseClusterSide": this.state.baseClusterSide,
