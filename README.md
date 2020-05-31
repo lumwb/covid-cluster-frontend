@@ -1,6 +1,10 @@
 ## Covid-Cluster front-end
 
-A very amatuer
+A (amatuer) attempt at creating a React web front-end for visualising clusters.
+
+Allows for 3 simple operations to add cluster, delete cluster and get neighbour.
+
+Pardon the un-appealing UI and full page refresh on form-submit
 
 ### `yarn start`
 
