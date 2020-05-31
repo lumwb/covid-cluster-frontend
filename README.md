@@ -14,7 +14,7 @@ To install the required dependencies
 ### `npm start`
 Run react-server. localhost:3000
 
-### Resoureces / Libraries
+### Resources / Libraries
 - [Honeycomb-grid](https://github.com/flauwekeul/honeycomb) A real god-send in rendering grids. Coupled with [PixiJS](https://www.pixijs.com/) to give pixel perfect rendering of hexagons along with their cluster names.
 
 
