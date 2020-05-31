@@ -9,7 +9,7 @@ class AddClusterForm extends React.Component {
     };
 
     handleSubmit = async (event) => {
-        await axios.post(`http://localhost:9000/covidCluster/`, {
+        await axios.post(`http://covid-cluster-backend.herokuapp.com/covidCluster/`, {
             "baseClusterName": this.state.baseClusterName,
             "baseClusterSide": this.state.baseClusterSide,
             "newClusterName": this.state.newClusterName,

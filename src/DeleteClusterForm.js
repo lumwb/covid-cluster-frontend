@@ -8,7 +8,7 @@ class DeleteClusterForm extends React.Component {
 
     handleSubmit = async (event) => {
         event.preventDefault();
-        axios.delete(`http://localhost:9000/covidCluster/`,
+        axios.delete(`http://covid-cluster-backend.herokuapp.com/covidCluster/`,
             { data: { clusterName: this.state.clusterName } })
             .then((response) => {
                 // alert(response);
